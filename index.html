@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="auhtor" content="Mary">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="revised" content="11/17/2023">
+  
+  <title>Quarter 2 FA1</title>
+    
+
+  <style>
+  
+    a:first-child:visited {
+      color: blue;
+      background-color: lightblue;
+    }
+
+    a:first-child:hover {
+      background-color: red;
+    }
+
+    a:first-child:active {
+      color: green;
+      background-color: lightgreen;
+    }
+
+    a:first-child:link {
+      color: purple;
+      background-color: blue;
+    }
+
+    a:second-child:visited {
+      color: black;
+      background-color: red;
+	}
+
+    a:second-child:hover {
+      color: orange;
+      background-color: blue;
+    }
+
+    a:second-child:active {
+      color: brown;
+      background-color: pink;
+    }
+
+    a:second-child:link {
+      color: navy;
+      background-color: purple;
+    }
+
+    div {
+      width: 200px;
+      height: 100px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+	  border: 2px solid black;
+    }
+
+    #firstDiv:target {
+      background-color: lightblue;
+      color: white;
+    }
+
+    #secondDiv:target {
+      border: 10px dotted green;
+	  background-color: pink;
+    }
+  </style>
+  
+  <body>
+  <a href="#firstDiv">First Link</a>
+  <br><br>
+  <a href="#secondDiv">Second Link</a>
+  <br><br>
+  <div id="firstDiv">First Div</div>
+  <br><br>
+  <div id="secondDiv">Second Div</div>
+</body>
+</head>
+
+</html>
